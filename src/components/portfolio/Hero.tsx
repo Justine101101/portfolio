@@ -131,10 +131,13 @@ export const Hero = ({ onNavigate }: HeroProps) => {
           <Button
             size="lg"
             variant="outline"
+            asChild
             className="h-12 rounded-full border-white/15 bg-white/[0.03] px-7 text-sm font-semibold backdrop-blur-xl transition-all duration-300 hover:border-white/25 hover:bg-white/[0.06]"
           >
-            <Download className="mr-1.5 h-4 w-4" />
-            Download Resume
+            <a href="/Justine-Jundarino-Resume.pdf" download="Justine-Jundarino-Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <Download className="mr-1.5 h-4 w-4" />
+              Download Resume
+            </a>
           </Button>
         </motion.div>
       </div>

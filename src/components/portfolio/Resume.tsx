@@ -1,21 +1,31 @@
 import { motion } from "framer-motion";
-import { GraduationCap, Briefcase } from "lucide-react";
+import { Download, ExternalLink, GraduationCap, Briefcase } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
+import { Button } from "@/components/ui/button";
+
+const RESUME_PDF = "/Justine-Jundarino-Resume.pdf";
 
 const timeline = [
   {
     icon: GraduationCap,
     title: "BSIT — Bachelor of Science in Information Technology",
-    place: "University · Fresh Graduate",
-    period: "2021 — 2025",
-    desc: "Focused on full-stack web development, databases, and software engineering. Capstone: a Laravel + React SaaS platform.",
+    place: "Data Center College of the Philippines · Baguio City",
+    period: "2022 — 2026",
+    desc: "Focused on full-stack web development, databases, and software engineering. Capstone: Volunteer Management System with Laravel.",
   },
   {
     icon: Briefcase,
-    title: "Freelance Full-Stack Developer",
-    place: "Self-employed",
-    period: "2023 — Present",
-    desc: "Built and shipped client web apps using Laravel, React, and Tailwind. Designed REST APIs and managed deployments end-to-end.",
+    title: "IT Support Intern — Global Agility Solutions",
+    place: "600 Hours OJT",
+    period: "Aug 2025 — Dec 2025",
+    desc: "Provided hardware, software, and connectivity support. Assisted with setup, troubleshooting, preventive maintenance, and IT documentation.",
+  },
+  {
+    icon: Briefcase,
+    title: "Full-Stack Developer — Volunteer Management System",
+    place: "Academic Capstone Project",
+    period: "Jan 2026 — Present",
+    desc: "Built authentication, event registration, email notifications, admin dashboard, and REST API integrations with Laravel.",
   },
 ];
 
@@ -43,6 +53,53 @@ export const Resume = () => {
           highlight="proficiency."
           description="A snapshot of my education, experience, and what I bring to the table."
         />
+
+        {/* Full resume PDF — visible to recruiters */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.55 }}
+          className="mb-16"
+        >
+          <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+            <div className="flex items-center gap-2">
+              <div className="h-px w-8 bg-border" />
+              <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Full resume</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <Button
+                size="sm"
+                variant="outline"
+                asChild
+                className="rounded-full border-white/15 bg-white/[0.03] text-xs font-semibold backdrop-blur-xl hover:border-white/25 hover:bg-white/[0.06]"
+              >
+                <a href={RESUME_PDF} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-1.5 h-3.5 w-3.5" />
+                  Open PDF
+                </a>
+              </Button>
+              <Button
+                size="sm"
+                asChild
+                className="rounded-full bg-foreground px-4 text-xs font-semibold text-background hover:bg-foreground/90"
+              >
+                <a href={RESUME_PDF} download="Justine-Jundarino-Resume.pdf">
+                  <Download className="mr-1.5 h-3.5 w-3.5" />
+                  Download
+                </a>
+              </Button>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-card shadow-elegant">
+            <iframe
+              src={`${RESUME_PDF}#view=FitH`}
+              title="Justine Franciscus Jundarino — Resume"
+              className="h-[70vh] min-h-[520px] w-full bg-white"
+            />
+          </div>
+        </motion.div>
 
         <div className="grid gap-16 lg:grid-cols-2">
           {/* Timeline */}
