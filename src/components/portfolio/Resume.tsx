@@ -24,7 +24,7 @@ const timeline = [
     icon: Briefcase,
     title: "Full-Stack Developer — Volunteer Management System",
     place: "Academic Capstone Project",
-    period: "Jan 2026 — Present",
+    period: "Dec 2025 — Feb 2026",
     desc: "Built authentication, event registration, email notifications, admin dashboard, and REST API integrations with Laravel.",
   },
 ];
