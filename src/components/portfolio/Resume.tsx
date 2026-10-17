@@ -10,7 +10,7 @@ const timeline = [
     icon: GraduationCap,
     title: "BSIT — Bachelor of Science in Information Technology",
     place: "Data Center College of the Philippines · Baguio City",
-    period: "2022 — 2026",
+    period: "Aug 2022 — May 2026",
     desc: "Focused on full-stack web development, databases, and software engineering. Capstone: Volunteer Management System with Laravel.",
   },
   {
@@ -24,7 +24,7 @@ const timeline = [
     icon: Briefcase,
     title: "Full-Stack Developer — Volunteer Management System",
     place: "Academic Capstone Project",
-    period: "Dec 2025 — Feb 2026",
+    period: "2025 — 2026",
     desc: "Built authentication, event registration, email notifications, admin dashboard, and REST API integrations with Laravel.",
   },
 ];
