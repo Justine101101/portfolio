@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight, ExternalLink } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import p1 from "@/assets/project-1.jpg";
@@ -170,10 +170,6 @@ export const Portfolio = () => {
                     </ul>
                   </div>
                 </div>
-
-                <button className="mt-8 inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-semibold text-background transition-all hover:scale-[1.02]">
-                  Visit live project <ExternalLink className="h-3.5 w-3.5" />
-                </button>
               </div>
             </div>
           )}
