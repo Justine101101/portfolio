@@ -35,22 +35,6 @@ export const Sidebar = ({ active, onNavigate }: SidebarProps) => {
 
   const SidebarContent = (
     <div className="flex h-full w-72 flex-col border-r border-sidebar-border bg-sidebar px-6 py-10">
-      {/* Logo mark */}
-      <motion.div
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="mb-8 flex items-center gap-2.5"
-      >
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-primary shadow-glow-soft">
-          <span className="font-display text-sm font-bold text-primary-foreground">J</span>
-        </div>
-        <div>
-          <div className="font-display text-sm font-bold leading-none">Justine Jundarino</div>
-          <div className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Portfolio v2.0</div>
-        </div>
-      </motion.div>
-
       {/* Profile card */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
