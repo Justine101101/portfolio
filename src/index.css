@@ -174,3 +174,8 @@
   33% { transform: translate(10%, -10%) rotate(120deg); }
   66% { transform: translate(-10%, 10%) rotate(240deg); }
 }
+
+/* Lovable injects this badge on published sites */
+#lovable-badge {
+  display: none !important;
+}
