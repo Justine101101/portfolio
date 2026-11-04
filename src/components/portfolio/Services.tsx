@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, Server, Sparkles, ArrowUpRight } from "lucide-react";
+import { Code, Server, Sparkles, Bot, ArrowUpRight } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 
 const services = [
@@ -24,6 +24,13 @@ const services = [
     items: ["Design systems", "Prototyping", "Responsive", "Accessibility"],
     price: "from $800",
   },
+  {
+    icon: Bot,
+    title: "AI Automation",
+    desc: "Custom AI workflows that cut busywork — chatbots, agents, and LLM-powered tools wired into your stack.",
+    items: ["Chatbots & agents", "Workflow automation", "LLM integrations", "Internal tools"],
+    price: "from $1.2k",
+  },
 ];
 
 export const Services = () => {
@@ -40,7 +47,7 @@ export const Services = () => {
           description="From concept to deploy — I deliver products that look great and scale beautifully."
         />
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {services.map((s, i) => (
             <motion.div
               key={s.title}
