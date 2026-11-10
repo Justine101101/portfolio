@@ -11,7 +11,7 @@ const timeline = [
     title: "BSIT — Bachelor of Science in Information Technology",
     place: "Data Center College of the Philippines · Baguio City",
     period: "Aug 2022 — May 2026",
-    desc: "Focused on full-stack web development, databases, and software engineering. Capstone: Volunteer Management System with Laravel.",
+    desc: "Focused on full-stack web development, databases, AI automation, and software engineering. Capstone: Volunteer Management System with Laravel.",
   },
   {
     icon: Briefcase,
@@ -25,13 +25,14 @@ const timeline = [
     title: "Full-Stack Developer — Volunteer Management System",
     place: "Academic Capstone Project",
     period: "2025 — 2026",
-    desc: "Built authentication, event registration, email notifications, admin dashboard, and REST API integrations with Laravel.",
+    desc: "Built authentication, event registration, email notifications, admin dashboard, and REST API integrations with Laravel. Exploring AI-assisted workflows for ops automation.",
   },
 ];
 
 const skills = [
   { name: "Laravel", value: 90 },
   { name: "React", value: 80 },
+  { name: "AI Automation", value: 85 },
   { name: "SQL & Databases", value: 85 },
   { name: "API Integration", value: 88 },
   { name: "Tailwind CSS", value: 92 },

@@ -34,7 +34,7 @@ export const Contact = () => {
           eyebrow="Contact"
           title="Let's build"
           highlight="something great."
-          description="Have a project in mind, a role to discuss, or just want to say hi? Drop a message."
+          description="Have a web app, AI automation workflow, or role to discuss? Drop a message — happy to help."
           align="center"
         />
 
@@ -127,7 +127,7 @@ export const Contact = () => {
                 rows={6}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
-                placeholder="Tell me about your project…"
+                placeholder="Tell me about your project or AI automation idea…"
                 className="rounded-lg border-white/[0.08] bg-background/40 backdrop-blur focus-visible:border-primary focus-visible:ring-primary/30"
               />
             </div>

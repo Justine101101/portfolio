@@ -5,12 +5,13 @@ import { Button } from "@/components/ui/button";
 
 const ROLES = [
   "Full-Stack Developer",
+  "AI Automation Specialist",
   "Laravel Specialist",
   "React Engineer",
   "API Developer",
 ];
 
-const LOGOS = ["Laravel", "React", "TypeScript", "Tailwind", "Supabase", "MySQL", "Node.js", "PostgreSQL", "Vite", "Figma"];
+const LOGOS = ["Laravel", "React", "TypeScript", "Tailwind", "OpenAI", "n8n", "Supabase", "MySQL", "Node.js", "PostgreSQL", "Vite", "Figma"];
 
 interface HeroProps {
   onNavigate: (id: string) => void;
@@ -100,7 +101,7 @@ export const Hero = ({ onNavigate }: HeroProps) => {
           className="mt-7 max-w-2xl text-lg text-muted-foreground text-balance md:text-xl"
         >
           Hi, I'm <span className="font-semibold text-foreground">Justine Jundarino</span> — a fresh BSIT
-          graduate crafting fast, beautiful, production-grade web apps with Laravel, React, and modern APIs.
+          graduate building production-grade web apps and AI automation workflows with Laravel, React, and modern APIs.
         </motion.p>
 
         <motion.div

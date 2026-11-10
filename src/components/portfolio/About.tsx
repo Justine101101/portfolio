@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Lightbulb, Code2, Palette, Zap, Shield, Rocket } from "lucide-react";
+import { Lightbulb, Code2, Palette, Bot, Shield, Rocket } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 
 const stack = [
@@ -10,6 +10,8 @@ const stack = [
   { name: "React", category: "Frontend" },
   { name: "TypeScript", category: "Language" },
   { name: "Tailwind", category: "Styling" },
+  { name: "OpenAI", category: "AI" },
+  { name: "n8n", category: "Automation" },
   { name: "REST APIs", category: "Architecture" },
 ];
 
@@ -17,7 +19,7 @@ const cards = [
   { icon: Lightbulb, title: "Problem Solving", desc: "Breaking down complex challenges into elegant, maintainable solutions.", span: "md:col-span-2" },
   { icon: Code2, title: "Clean Code", desc: "Readable, scalable, well-tested code that ages gracefully.", span: "" },
   { icon: Palette, title: "UI / UX Focus", desc: "Interfaces that feel intuitive, responsive, and delightful.", span: "" },
-  { icon: Zap, title: "Performance", desc: "Sub-100ms interactions and snappy load times by default.", span: "" },
+  { icon: Bot, title: "AI Automation", desc: "Chatbots, agents, and LLM workflows that cut busywork and plug into your stack.", span: "" },
   { icon: Shield, title: "Secure by Design", desc: "Auth, RLS, input validation, and OWASP best practices baked in.", span: "" },
   { icon: Rocket, title: "Ship Fast", desc: "MVP to production in days, not months. CI/CD ready.", span: "md:col-span-2" },
 ];
@@ -32,7 +34,7 @@ export const About = () => {
         eyebrow="About"
         title="Engineered for"
         highlight="craft & scale."
-        description="Fresh BSIT graduate with a love for clean architecture, fast UIs, and pragmatic engineering. I build SaaS products, internal tools, and APIs that scale."
+        description="BSIT graduate with a love for clean architecture, fast UIs, and pragmatic engineering. I build SaaS products, AI automation workflows, internal tools, and APIs that scale."
       />
 
       {/* Bento grid */}
@@ -83,7 +85,7 @@ export const About = () => {
               className="group flex items-center justify-between border-b border-white/[0.04] px-6 py-4 transition-colors last:border-0 hover:bg-white/[0.02]"
             >
               <div className="flex items-center gap-4">
-                <span className="font-mono text-xs text-muted-foreground/60">0{i + 1}</span>
+                <span className="font-mono text-xs text-muted-foreground/60">{String(i + 1).padStart(2, "0")}</span>
                 <span className="font-display text-base font-semibold transition-colors group-hover:text-primary">{s.name}</span>
               </div>
               <span className="text-xs uppercase tracking-widest text-muted-foreground">{s.category}</span>

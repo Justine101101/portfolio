@@ -44,7 +44,7 @@ export const Services = () => {
           eyebrow="Services"
           title="What I"
           highlight="do best."
-          description="From concept to deploy — I deliver products that look great and scale beautifully."
+          description="From concept to deploy — web apps, APIs, polished UI, and AI automation that scale beautifully."
         />
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
