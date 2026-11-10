@@ -100,7 +100,7 @@ export const Hero = ({ onNavigate }: HeroProps) => {
           transition={{ duration: 0.8, delay: 0.25 }}
           className="mt-7 max-w-2xl text-lg text-muted-foreground text-balance md:text-xl"
         >
-          Hi, I'm <span className="font-semibold text-foreground">Justine Jundarino</span> — a fresh BSIT
+          Hi, I'm <span className="font-semibold text-foreground">Justine Jundarino</span> — a BSIT
           graduate building production-grade web apps and AI automation workflows with Laravel, React, and modern APIs.
         </motion.p>
 
