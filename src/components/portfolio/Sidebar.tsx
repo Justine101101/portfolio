@@ -56,8 +56,7 @@ export const Sidebar = ({ active, onNavigate }: SidebarProps) => {
           </div>
           <div className="min-w-0">
             <div className="font-display text-sm font-semibold leading-tight">Justine Jundarino</div>
-            <div className="text-[11px] text-muted-foreground">Full-Stack Dev</div>
-            <div className="text-[11px] text-muted-foreground">AI Automation Developer</div>
+            <div className="text-[11px] leading-snug text-muted-foreground">Full Stack AI Automation Developer</div>
           </div>
         </div>
       </motion.div>

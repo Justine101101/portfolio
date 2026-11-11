@@ -4,8 +4,7 @@ import { ArrowRight, Download, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ROLES = [
-  "Full-Stack Developer",
-  "AI Automation Specialist",
+  "Full Stack AI Automation Developer",
   "Laravel Specialist",
   "React Engineer",
   "API Developer",
