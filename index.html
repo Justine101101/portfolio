@@ -10,10 +10,8 @@
     <meta property="og:title" content="Justine Jundarino — Full Stack AI Automation Developer" />
     <meta property="og:description" content="Full Stack AI Automation Developer specializing in Laravel, React, APIs, and LLM-powered workflows." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:card" content="summary" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +20,19 @@
 
   <body>
     <div id="root"></div>
+    <script>
+      (function () {
+        var removeBadge = function () {
+          var badge = document.getElementById("lovable-badge");
+          if (badge) badge.remove();
+        };
+        removeBadge();
+        new MutationObserver(removeBadge).observe(document.documentElement, {
+          childList: true,
+          subtree: true,
+        });
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

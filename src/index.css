@@ -175,7 +175,9 @@
   66% { transform: translate(-10%, 10%) rotate(240deg); }
 }
 
-/* Lovable injects this badge on published sites */
+/* Lovable hosting injects this badge; it is not part of the app source. */
 #lovable-badge {
   display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
