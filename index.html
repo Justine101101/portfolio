@@ -13,6 +13,8 @@
 
     <meta name="twitter:card" content="summary" />
 
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -25,6 +27,10 @@
         var removeBadge = function () {
           var badge = document.getElementById("lovable-badge");
           if (badge) badge.remove();
+          document.querySelectorAll('link[rel*="icon"]').forEach(function (link) {
+            var href = link.getAttribute("href") || "";
+            if (href.indexOf("lovable") !== -1) link.setAttribute("href", "/favicon.svg");
+          });
         };
         removeBadge();
         new MutationObserver(removeBadge).observe(document.documentElement, {
