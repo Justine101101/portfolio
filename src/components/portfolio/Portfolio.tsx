@@ -9,8 +9,9 @@ import p3 from "@/assets/project-3.jpg";
 import p4 from "@/assets/project-4.jpg";
 import p5 from "@/assets/project-5.jpg";
 import p6 from "@/assets/project-6.jpg";
+import myra from "@/assets/myra-biotech.svg";
 
-const FILTERS = ["All", "Web App", "AI", "Mobile", "UI/UX", "Branding"] as const;
+const FILTERS = ["All", "BI Platform", "Web App", "AI", "Mobile", "UI/UX", "Branding"] as const;
 type Filter = typeof FILTERS[number];
 
 interface Project {
@@ -24,6 +25,15 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: "Myra Biotech — Profit & Inventory",
+    category: "BI Platform",
+    image: myra,
+    stack: ["React", "TypeScript", "Supabase", "PostgreSQL"],
+    description: "Full-stack business intelligence platform for e-commerce teams. Uploaded Shopify sales exports and Meta Ads CSV reports feed dashboards for revenue, expenses, net profit, products, and inventory — not a live store or ads API.",
+    features: ["Revenue, expense, and profit dashboard", "Shopify and Meta Ads CSV import", "Daily and monthly P&L", "Inventory reorder and stockout forecast", "Auth with user-specific data"],
+    year: "2026",
+  },
   { title: "OpsFlow AI Assistant", category: "AI", image: p6, stack: ["OpenAI", "n8n", "Laravel", "React"], description: "Internal AI assistant that automates support triage, summarization, and routine ops workflows via LLM agents and n8n.", features: ["Chatbot agent", "Ticket triage", "Workflow triggers", "Slack / email hooks"], year: "2026" },
   { title: "Analytics Dashboard", category: "Web App", image: p1, stack: ["React", "Laravel", "MySQL"], description: "Real-time analytics dashboard for SaaS metrics with charting and insights.", features: ["Live charts", "Custom date ranges", "Export to CSV", "Role-based access"], year: "2025" },
   { title: "FitTrack Mobile", category: "Mobile", image: p2, stack: ["React Native", "Supabase"], description: "Cross-platform fitness tracker with workouts, history, and social challenges.", features: ["Workout library", "Progress charts", "Friends & sharing", "Offline mode"], year: "2025" },
@@ -48,7 +58,7 @@ export const Portfolio = () => {
           eyebrow="Portfolio"
           title="Selected"
           highlight="work."
-          description="A curated collection of projects spanning web, AI automation, mobile, and design."
+          description="A curated collection of projects spanning business intelligence, web, AI automation, mobile, and design."
         />
       </div>
 
