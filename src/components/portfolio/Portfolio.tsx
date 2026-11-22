@@ -9,7 +9,7 @@ import p3 from "@/assets/project-3.jpg";
 import p4 from "@/assets/project-4.jpg";
 import p5 from "@/assets/project-5.jpg";
 import p6 from "@/assets/project-6.jpg";
-import myra from "@/assets/myra-biotech.svg";
+import myra from "@/assets/myra-biotech.png";
 
 const FILTERS = ["All", "BI Platform", "Web App", "AI", "Mobile", "UI/UX", "Branding"] as const;
 type Filter = typeof FILTERS[number];
