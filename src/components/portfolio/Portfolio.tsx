@@ -10,6 +10,7 @@ import p4 from "@/assets/project-4.jpg";
 import p5 from "@/assets/project-5.jpg";
 import p6 from "@/assets/project-6.jpg";
 import myra from "@/assets/myra-biotech.png";
+import supportAi from "@/assets/ai-customer-support.jpg";
 
 const FILTERS = ["All", "BI Platform", "Web App", "AI", "Mobile", "UI/UX", "Branding"] as const;
 type Filter = typeof FILTERS[number];
@@ -26,7 +27,16 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Myra Biotech — Profit & Inventory",
+    title: "AI Customer Support Automation",
+    category: "AI",
+    image: supportAi,
+    stack: ["n8n", "Claude", "Anthropic API", "Email"],
+    description: "Completed freelance automation that handles customer support with an n8n workflow and a Claude AI agent. New inquiries are formatted, analyzed, and answered by email without custom application code.",
+    features: ["Visual n8n workflow", "Claude customer-support agent", "Form trigger and input formatting", "Automated email replies"],
+    year: "2026",
+  },
+  {
+    title: "Business Profit & Inventory",
     category: "BI Platform",
     image: myra,
     stack: ["React", "TypeScript", "Supabase", "PostgreSQL"],
